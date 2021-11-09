@@ -1,0 +1,12 @@
+services:
+  cse3461-server:
+    image: cse3461-server
+    build: 
+      context: .
+      target: dev 
+    volumes:
+      - .:/code
+    ports:
+      - 43110:43110
+    tty: true
+    stdin_open: true

@@ -1,0 +1,10 @@
+services:
+  cse3461-client:
+    image: cse3461-client
+    build: 
+      context: .
+      target: dev 
+    volumes:
+      - .:/code
+    tty: true
+    stdin_open: true

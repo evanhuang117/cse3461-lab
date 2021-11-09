@@ -5,7 +5,7 @@ services:
       context: ./cse3461-server
       target: dev 
     volumes:
-      - ./cse3461-server:/code
+      - .:/code
     ports:
       - 43110:43110
     tty: true
@@ -17,7 +17,7 @@ services:
       context: ./cse3461-client
       target: dev 
     volumes:
-      - ./cse3461-client:/code
+      - .:/code
     ports:
       - 43111:43111
     environment:
