@@ -7,7 +7,8 @@ class Command:
 def shutdown():
     return Command('shutdown', None)
 
-
+def new_list():
+    pass
 def view(filename=None):
     if not filename:
         print('Please enter a filename')

@@ -1,5 +1,13 @@
 import asyncio
 import pickle
+import logging
+import sys
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(name)s: %(message)s',
+    stream=sys.stderr,
+)
+log = logging.getLogger('main')
 
 clients = []
 HEADER_SIZE = 10
